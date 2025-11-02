@@ -1522,6 +1522,10 @@ body {
   font-weight: var(--font-weight-medium);
 }
 
+.btn.hidden {
+  display: none;
+}
+
 /* Responsive Design */
 @media (max-width: 800px) {
   .main-content {

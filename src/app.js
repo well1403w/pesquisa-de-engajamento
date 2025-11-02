@@ -65,18 +65,8 @@ const surveyData = {
             "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
           color: "green",
         },
-        {
-          label: "PARCIAL",
-          emoji:
-            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
-          color: "yellow",
-        },
-        {
-          label: "NÃO",
-          emoji:
-            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
-          color: "red",
-        },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
       ],
     },
     {

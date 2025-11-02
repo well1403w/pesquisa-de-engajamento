@@ -353,6 +353,7 @@ const appState = {
 
 // DOM Elements
 const elements = {
+  pesquisa: document.getElementById("pesquisa"),
   welcomeScreen: document.getElementById("welcomeScreen"),
   surveyContainer: document.getElementById("surveyContainer"),
   successScreen: document.getElementById("successScreen"),

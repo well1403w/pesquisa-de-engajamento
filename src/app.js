@@ -59,12 +59,8 @@ const surveyData = {
       question: "6. Nossos valores são praticados no dia a dia?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        {
-          label: "PARCIAL",
-          emoji: "./assets/rosto-neutro.png",
-          color: "yellow",
-        }, // <-- ALTERADO
+        { label: "SIM", emoji: "/assets/rosto-feliz.png", color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
         { label: "NÃO", emoji: RostoTriste, color: "red" },
       ],
     },

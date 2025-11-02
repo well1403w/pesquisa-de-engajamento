@@ -1,8 +1,3 @@
-// Emoji image assets
-const RostoFeliz = "./assets/rosto-feliz.png";
-const RostoNeutro = "./assets/rosto-neutro.png";
-const RostoTriste = "./assets/rosto-triste.png";
-
 // Survey data structure
 const surveyData = {
   steps: [
@@ -65,8 +60,18 @@ const surveyData = {
             "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
           color: "green",
         },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -75,9 +80,24 @@ const surveyData = {
         "7.Na Masterboi as pessoas são bem tratadas, independentemente da religião; cultura; cor/etnia; sexo, idade, cargo, posição?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -86,9 +106,24 @@ const surveyData = {
         "8. Posso denunciar comportamentos ou práticas antiéticas sem medo de ser punido; através do canal de ética e conduta?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -97,9 +132,24 @@ const surveyData = {
         "9. No meu setor, tenho um ambiente de cooperação e trabalho em equipe?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -107,9 +157,24 @@ const surveyData = {
       question: "10. Na minha opinião, existe colaboração entre as áreas?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -118,9 +183,24 @@ const surveyData = {
         "11. A empresa incentiva o equilíbrio entre vida pessoal e profissional?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -129,9 +209,24 @@ const surveyData = {
         "12. Entendo claramente como o meu trabalho contribui para o alcance dos resultados da Masterboi?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -140,9 +235,24 @@ const surveyData = {
         "13. Novas ideias; perspectivas e estilos de trabalho, para a melhoria dos processos são aceitas?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -151,9 +261,24 @@ const surveyData = {
         "14. Recebo treinamento adequado para realização do meu trabalho?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -162,9 +287,24 @@ const surveyData = {
         "15. Eu recebo equipamentos, ferramentas de trabalho e EPI's, necessários para realizar minhas atividades?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -173,9 +313,24 @@ const surveyData = {
         "16. Os processos e procedimentos na Masterboi são claros e bem definidos?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -183,9 +338,24 @@ const surveyData = {
       question: "17. Considero a Masterboi um bom lugar para se trabalhar?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -215,9 +385,24 @@ const surveyData = {
         "20. Meu gestor deixa claro; para mim e para a equipe, as metas, objetivos e estratégias do setor?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -226,9 +411,24 @@ const surveyData = {
         "21. Meu gestor imediato reconhece quando eu realizo um bom trabalho?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -237,9 +437,24 @@ const surveyData = {
         "22. Meu gestor realiza comigo o papo de carreira, deixando claro minhas fortalezas e oportunidades, com plano de desenvolvimento?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -247,9 +462,24 @@ const surveyData = {
       question: "23. Conheço e acesso os canais de comunicações da Masterboi?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -258,9 +488,24 @@ const surveyData = {
         "24. A empresa se comunica de maneira eficaz com os colaboradores?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -269,9 +514,24 @@ const surveyData = {
         "25. A liderança me mantém informado(a) sobre as mudanças nos processos e procedimentos da Masterboi?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -280,9 +540,24 @@ const surveyData = {
         "26. Tenho acesso fácil às informações da minha remuneração, banco de horas e/ou premiações?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -291,9 +566,24 @@ const surveyData = {
         "27. Sinto que sou remunerado de forma justa pelo trabalho que realizo?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -302,9 +592,24 @@ const surveyData = {
         "28. Eu conheço os critérios do programa de incentivo à produtividade/premiação da Masterboi?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -312,9 +617,24 @@ const surveyData = {
       question: "29. Todos aqui tem oportunidade de carreira (decolar)?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -323,9 +643,24 @@ const surveyData = {
         "30. Os benefícios oferecidos pela Masterboi são atrativos quando comparados às práticas de outras empresas?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {
@@ -334,9 +669,24 @@ const surveyData = {
         "31. Os benefícios oferecidos pela Masterboi atendem minhas necessidades?",
       type: "emoji_choice",
       options: [
-        { label: "SIM", emoji: RostoFeliz, color: "green" },
-        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
-        { label: "NÃO", emoji: RostoTriste, color: "red" },
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
       ],
     },
     {

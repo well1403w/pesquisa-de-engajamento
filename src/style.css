@@ -1625,6 +1625,13 @@ body {
     padding: var(--space-12) var(--space-16);
     font-size: var(--font-size-sm);
   }
+  .nova_pesquisa {
+    color: white;
+    background-color: #b01b26;
+    min-width: 80px;
+    padding: var(--space-12) var(--space-16);
+    font-size: var(--font-size-sm);
+  }
 
   .progress-indicator {
     width: 60px;

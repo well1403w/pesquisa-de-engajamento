@@ -388,7 +388,6 @@ function attachEventListeners() {
   elements.backBtn.addEventListener("click", goToPreviousStep);
   elements.continueBtn.addEventListener("click", goToNextStep);
   elements.finishBtn.addEventListener("click", submitSurvey);
-  elements.retryBtn.addEventListener("click", resetToLastStep);
 }
 
 // Show/hide screens

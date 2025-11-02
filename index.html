@@ -79,9 +79,11 @@
           <p class="success-message">
             Obrigado por participar e contribuir para a melhoria da Masterboi.
           </p>
-          <button id="pesquisa" class="nova_pesquisa" onclick="pesquisa">
-            Nova pesquisa
-          </button>
+          <form action="">
+            <button id="nova_pesquisa" class="nova_pesquisa" type="submit">
+              Nova pesquisa
+            </button>
+          </form>
         </div>
       </div>
 
@@ -178,6 +180,8 @@
               id="matricula"
               name="matricula"
               class="form-control"
+              pattern="[0-9]*"
+              inputmode="numeric"
               required
             />
           </div>

@@ -353,7 +353,6 @@ const appState = {
 
 // DOM Elements
 const elements = {
-  pesquisa: document.getElementById("pesquisa"),
   welcomeScreen: document.getElementById("welcomeScreen"),
   surveyContainer: document.getElementById("surveyContainer"),
   successScreen: document.getElementById("successScreen"),
@@ -736,10 +735,30 @@ async function submitSurvey() {
   }
 }
 
+function resetPesquisa() {
+  console.log("ee");
+}
+
 // Retry
-function resetToLastStep() {
-  showScreen("surveyContainer");
-  elements.navigationFooter.classList.remove("hidden");
+function resetSurvey() {
+  // Zera estado
+  appState.currentStep = 1;
+  appState.answers = {};
+
+  // Reset progresso
+  updateNavigationButtons();
+  updateProgressBar();
+
+  // Troca telas
+  document.getElementById("welcomeScreen").classList.add("active");
+  document.getElementById("surveyContainer").classList.remove("active");
+  document.getElementById("successScreen").classList.remove("active");
+  document.getElementById("errorScreen").classList.remove("active");
+
+  // Oculta o footer de navegação
+  document.getElementById("navigationFooter").classList.add("hidden");
+
+  // Renderiza novamente o step inicial
   renderStep();
 }
 

@@ -930,6 +930,8 @@ body {
 /* Screen Management */
 .screen {
   display: none;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   animation: fadeIn var(--duration-normal) var(--ease-standard);
 }
@@ -1526,6 +1528,18 @@ body {
   display: none;
 }
 
+.nova_pesquisa {
+  color: white;
+  background-color: #b01b26;
+  min-width: 80px;
+  padding: var(--space-12) var(--space-16);
+  font-size: var(--font-size-sm);
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.137);
+  margin-top: 50px;
+}
+
 /* Responsive Design */
 @media (max-width: 800px) {
   .main-content {
@@ -1621,13 +1635,6 @@ body {
   .btn-back,
   .btn-continue,
   .btn-finish {
-    min-width: 80px;
-    padding: var(--space-12) var(--space-16);
-    font-size: var(--font-size-sm);
-  }
-  .nova_pesquisa {
-    color: white;
-    background-color: #b01b26;
     min-width: 80px;
     padding: var(--space-12) var(--space-16);
     font-size: var(--font-size-sm);

@@ -1,5 +1,4 @@
 // Emoji image assets
-const RostoFeliz = "./assets/rosto-feliz.png";
 const RostoNeutro = "./assets/rosto-neutro.png";
 const RostoTriste = "./assets/rosto-triste.png";
 

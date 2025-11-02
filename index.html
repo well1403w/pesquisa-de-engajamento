@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <title>Pesquisa de Engajamento - Masterboi</title>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">
+          <img
+            src="https://www.masterboi.com.br/wp-content/uploads/2025/02/logo-masterboi.png"
+            alt="Masterboi"
+            class="logo"
+          />
+        </div>
+        <div class="survey-badge">
+          <span class="badge-text">Pesquisa de Engajamento</span>
+          <div class="badge-emojis">
+            <img
+              class="emoji-icon"
+              src="./assets/rosto-triste.png"
+              alt="Triste"
+              id="triste"
+            />
+            <img
+              class="emoji-icon"
+              src="./assets/rosto-neutro.png"
+              alt="Neutro"
+              id="neutro"
+            />
+            <img
+              class="emoji-icon"
+              src="./assets/rosto-feliz.png"
+              alt="Feliz"
+              id="feliz"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Welcome Screen -->
+      <div id="welcomeScreen" class="screen active">
+        <div class="welcome-container">
+          <h1 class="welcome-title">Queremos ouvir você, colaborador!</h1>
+          <p class="welcome-subtitle">
+            Participe da pesquisa e ajude a Masterboi a ser cada vez melhor.
+          </p>
+          <button id="startSurveyBtn" class="btn btn-primary btn-large">
+            Responder
+          </button>
+        </div>
+        <div>
+          <img class="img-home" src="./assets/imagem.png" alt="boi" />
+        </div>
+      </div>
+
+      <!-- Survey Steps Container -->
+      <div id="surveyContainer" class="screen">
+        <div class="question-container">
+          <div id="sectionTitle" class="section-title"></div>
+          <h2 id="questionText" class="question-text"></h2>
+          <div id="questionOptions" class="question-options"></div>
+        </div>
+      </div>
+
+      <!-- Success Screen -->
+      <div id="successScreen" class="screen">
+        <div class="success-container">
+          <div class="success-icon">✓</div>
+          <h2 class="success-title">Pesquisa enviada com sucesso!</h2>
+          <p class="success-message">
+            Obrigado por participar e contribuir para a melhoria da Masterboi.
+          </p>
+        </div>
+      </div>
+
+      <!-- Error Screen -->
+      <div id="errorScreen" class="screen">
+        <div class="error-container">
+          <div class="error-icon">✕</div>
+          <h2 class="error-title">Erro ao enviar pesquisa</h2>
+          <p class="error-message">
+            Ocorreu um erro ao enviar suas respostas. Por favor, tente
+            novamente.
+          </p>
+          <button id="retryBtn" class="btn btn-primary">
+            Tentar Novamente
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Navigation Footer -->
+    <footer id="navigationFooter" class="navigation-footer hidden">
+      <button id="backBtn" class="btn btn-nav btn-back">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M19 12H5M12 19l-7-7 7-7" />
+        </svg>
+        Voltar
+      </button>
+
+      <div class="progress-indicator">
+        <svg class="progress-ring" width="80" height="80">
+          <circle class="progress-ring-circle-bg" cx="40" cy="40" r="32" />
+          <circle
+            id="progressRingCircle"
+            class="progress-ring-circle"
+            cx="40"
+            cy="40"
+            r="32"
+          />
+        </svg>
+        <div class="progress-text">
+          <span id="currentStep">1</span>
+          <span class="progress-divider">de</span>
+          <span id="totalSteps">27</span>
+        </div>
+      </div>
+
+      <button id="continueBtn" class="btn btn-nav btn-continue" disabled>
+        Continuar
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M5 12h14M12 5l7 7-7 7" />
+        </svg>
+      </button>
+
+      <button id="finishBtn" class="btn btn-nav btn-finish hidden">
+        Finalizar
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path d="M5 13l4 4L19 7" />
+        </svg>
+      </button>
+    </footer>
+
+    <!-- Modal for User Info -->
+    <div id="userInfoModal" class="modal">
+      <div class="modal-content">
+        <h3 class="modal-title">Antes de começar</h3>
+        <form id="userInfoForm" class="modal-form">
+          <div class="form-group">
+            <label for="matricula" class="form-label"
+              >Digite sua matrícula</label
+            >
+            <input
+              type="text"
+              id="matricula"
+              name="matricula"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="cpf" class="form-label"
+              >Digite seu CPF (somente números)</label
+            >
+            <input
+              type="text"
+              id="cpf"
+              name="cpf"
+              class="form-control"
+              pattern="[0-9]*"
+              inputmode="numeric"
+              maxlength="11"
+              required
+            />
+          </div>
+          <div class="text-login">
+            <p>Login apenas para validação, todas as respostas são anônimas!</p>
+            <button type="submit" class="btn btn-primary btn-full-width">
+              Confirmar
+            </button>
+          </div>
+          <p
+            id="userInfoError"
+            class="error-message"
+            style="display: none; color: red; margin-top: 8px"
+          ></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay hidden">
+      <div class="loading-spinner"></div>
+      <p class="loading-text">Validando Login...</p>
+    </div>
+
+    <!-- Axios via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- App JS -->
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>

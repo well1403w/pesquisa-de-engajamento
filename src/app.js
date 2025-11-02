@@ -1,9 +1,54 @@
-// Emoji image assets
-
-// Survey data structure
 // Survey data structure
 const surveyData = {
   steps: [
+    {
+      number: 1,
+      question: "1. Há quanto tempo trabalha na Masterboi?",
+      type: "radio",
+      options: [
+        "Menos de 1 ano",
+        "1 a 5 anos",
+        "6 a 10 anos",
+        "11 a 15 anos",
+        "16 a 20 anos",
+        "21 anos e acima",
+      ],
+    },
+    {
+      number: 2,
+      question: "2. Qual sua faixa etária?",
+      type: "radio",
+      options: [
+        "18 a 25 anos",
+        "26 a 45 anos",
+        "46 a 60 anos",
+        "A partir de 61 anos",
+      ],
+    },
+    {
+      number: 3,
+      question: "3. Qual gênero se reconhece?",
+      type: "radio",
+      options: [
+        "Masculino",
+        "Feminino",
+        "Não Binário",
+        "Transgênero",
+        "Prefiro não Declarar",
+      ],
+    },
+    {
+      number: 4,
+      question: "4. Você se considera:",
+      type: "radio",
+      options: ["Amarelo", "Branco", "Indígena", "Pardo", "Preto"],
+    },
+    {
+      number: 5,
+      question: "5. Possui alguma deficiência?",
+      type: "radio",
+      options: ["Auditiva", "Cognitiva", "Física", "Visual", "Não se aplica"],
+    },
     {
       number: 6,
       question: "6. Nossos valores são praticados no dia a dia?",
@@ -20,7 +65,7 @@ const surveyData = {
           emoji:
             "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
           color: "yellow",
-        },
+        }, // <-- ALTERADO
         {
           label: "NÃO",
           emoji:
@@ -28,6 +73,297 @@ const surveyData = {
           color: "red",
         },
       ],
+    },
+    {
+      number: 7,
+      question:
+        "7.Na Masterboi as pessoas são bem tratadas, independentemente da religião; cultura; cor/etnia; sexo, idade, cargo, posição?",
+      type: "emoji_choice",
+      options: [
+        {
+          label: "SIM",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-feliz-DOT3AjJG.png",
+          color: "green",
+        },
+        {
+          label: "PARCIAL",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-neutro-BW_2vk46.png",
+          color: "yellow",
+        }, // <-- ALTERADO
+        {
+          label: "NÃO",
+          emoji:
+            "https://www.pesquisamaster.com.br/assets/rosto-triste-DvM_A49u.png",
+          color: "red",
+        },
+      ],
+    },
+    {
+      number: 8,
+      question:
+        "8. Posso denunciar comportamentos ou práticas antiéticas sem medo de ser punido; através do canal de ética e conduta?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 9,
+      question:
+        "9. No meu setor, tenho um ambiente de cooperação e trabalho em equipe?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 10,
+      question: "10. Na minha opinião, existe colaboração entre as áreas?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 11,
+      question:
+        "11. A empresa incentiva o equilíbrio entre vida pessoal e profissional?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 12,
+      question:
+        "12. Entendo claramente como o meu trabalho contribui para o alcance dos resultados da Masterboi?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 13,
+      question:
+        "13. Novas ideias; perspectivas e estilos de trabalho, para a melhoria dos processos são aceitas?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 14,
+      question:
+        "14. Recebo treinamento adequado para realização do meu trabalho?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 15,
+      question:
+        "15. Eu recebo equipamentos, ferramentas de trabalho e EPI's, necessários para realizar minhas atividades?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 16,
+      question:
+        "16. Os processos e procedimentos na Masterboi são claros e bem definidos?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 17,
+      question: "17. Considero a Masterboi um bom lugar para se trabalhar?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 18,
+      question: "18. Minha liderança age de acordo com o que fala?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 19,
+      question:
+        "19. Sou encorajado pelo meu gestor a pensar em novas maneiras de tornar o trabalho mais produtivo?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 20,
+      question:
+        "20. Meu gestor deixa claro; para mim e para a equipe, as metas, objetivos e estratégias do setor?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 21,
+      question:
+        "21. Meu gestor imediato reconhece quando eu realizo um bom trabalho?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 22,
+      question:
+        "22. Meu gestor realiza comigo o papo de carreira, deixando claro minhas fortalezas e oportunidades, com plano de desenvolvimento?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 23,
+      question: "23. Conheço e acesso os canais de comunicações da Masterboi?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 24,
+      question:
+        "24. A empresa se comunica de maneira eficaz com os colaboradores?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 25,
+      question:
+        "25. A liderança me mantém informado(a) sobre as mudanças nos processos e procedimentos da Masterboi?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 26,
+      question:
+        "26. Tenho acesso fácil às informações da minha remuneração, banco de horas e/ou premiações?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 27,
+      question:
+        "27. Sinto que sou remunerado de forma justa pelo trabalho que realizo?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 28,
+      question:
+        "28. Eu conheço os critérios do programa de incentivo à produtividade/premiação da Masterboi?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 29,
+      question: "29. Todos aqui tem oportunidade de carreira (decolar)?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 30,
+      question:
+        "30. Os benefícios oferecidos pela Masterboi são atrativos quando comparados às práticas de outras empresas?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 31,
+      question:
+        "31. Os benefícios oferecidos pela Masterboi atendem minhas necessidades?",
+      type: "emoji_choice",
+      options: [
+        { label: "SIM", emoji: RostoFeliz, color: "green" },
+        { label: "PARCIAL", emoji: RostoNeutro, color: "yellow" }, // <-- ALTERADO
+        { label: "NÃO", emoji: RostoTriste, color: "red" },
+      ],
+    },
+    {
+      number: 32,
+      question: "30. Deixe seu comentário final, elogio ou sugestões:",
+      type: "textarea",
+      placeholder: "",
     },
   ],
 };

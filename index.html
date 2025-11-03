@@ -133,7 +133,7 @@
         <div class="progress-text">
           <span id="currentStep">1</span>
           <span class="progress-divider">de</span>
-          <span id="totalSteps">27</span>
+          <span id="totalSteps">32</span>
         </div>
       </div>
 
@@ -177,20 +177,22 @@
             >
             <input
               type="text"
+              maxlength="6"
               id="matricula"
               name="matricula"
               class="form-control"
               pattern="[0-9]*"
               inputmode="numeric"
               required
+              placeholder="Somente números!"
             />
           </div>
           <div class="form-group">
             <label for="cpf" class="form-label"
-              >Digite seu CPF (somente números)</label
+              >Digite seu CPF </label
             >
             <input
-              type="text"
+              type="password"
               id="cpf"
               name="cpf"
               class="form-control"
@@ -198,6 +200,7 @@
               inputmode="numeric"
               maxlength="11"
               required
+                  placeholder="Somente números!"
             />
           </div>
           <div class="text-login">
@@ -215,10 +218,16 @@
       </div>
     </div>
 
-    <!-- Loading Overlay -->
+    <!-- Loading Overlay login -->
     <div id="loadingOverlay" class="loading-overlay hidden">
       <div class="loading-spinner"></div>
       <p class="loading-text">Validando Login...</p>
+    </div>
+
+     <!-- Loading Overlay login -->
+    <div id="loadingOverlaySubmit" class="loading-overlay hidden">
+      <div class="loading-spinner"></div>
+      <p class="loading-text">Finalizando pesquisa...</p>
     </div>
 
     <!-- Axios via CDN -->

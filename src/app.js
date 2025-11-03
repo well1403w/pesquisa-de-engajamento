@@ -719,9 +719,10 @@ const surveyData = {
         },
       ],
     },
+
     {
       number: 32,
-      question: "30. Deixe seu comentário final, elogio ou sugestões:",
+      question: "32. Deixe seu comentário final, elogio ou sugestões:",
       type: "textarea",
       placeholder: "",
     },
@@ -745,6 +746,9 @@ const elements = {
   navigationFooter: document.getElementById("navigationFooter"),
   userInfoModal: document.getElementById("userInfoModal"),
   loadingOverlay: document.getElementById("loadingOverlay"),
+
+  loadingOverlaySubmit: document.getElementById("loadingOverlaySubmit"),
+
   startSurveyBtn: document.getElementById("startSurveyBtn"),
   backBtn: document.getElementById("backBtn"),
   continueBtn: document.getElementById("continueBtn"),
@@ -972,6 +976,7 @@ function renderTextarea(step) {
   const container = document.createElement("div");
   container.className = "textarea-container";
   const textarea = document.createElement("textarea");
+  textarea.maxLength = "1000"
   textarea.className = "textarea-field";
   textarea.placeholder = step.placeholder || "Digite aqui...";
   textarea.addEventListener("input", () => {
@@ -1097,7 +1102,8 @@ function goToNextStep() {
 
 // Submit survey
 async function submitSurvey() {
-  elements.loadingOverlay.classList.add("active");
+  elements.loadingOverlaySubmit.classList.add("active");
+  //elements.loadingOverlay.classList.add("active");
   const submissionData = {
     ...appState.userInfo,
     answers: appState.answers,
@@ -1108,12 +1114,14 @@ async function submitSurvey() {
       "https://default3f4542cf1cf94670b1c0f8a54eefa3.c3.environment.api.powerplatform.com/powerautomate/automations/direct/workflows/cfe471ba5b28450c98f4141a459409e4/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=qWTB_zmyZ7iKUraCURh_E59O-DEIRRqDBOHU0LItr_o",
       submissionData
     );
-    elements.loadingOverlay.classList.remove("active");
+    elements.loadingOverlaySubmit.classList.remove("active");
+    // elements.loadingOverlay.classList.remove("active");
     elements.navigationFooter.classList.add("hidden");
     showScreen(response.status === 200 ? "successScreen" : "errorScreen");
   } catch (error) {
     console.error(error);
-    elements.loadingOverlay.classList.remove("active");
+    elements.loadingOverlaySubmit.classList.remove("active");
+    // elements.loadingOverlay.classList.remove("active");
     elements.navigationFooter.classList.add("hidden");
     showScreen("errorScreen");
   }

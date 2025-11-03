@@ -747,9 +747,7 @@ const elements = {
   navigationFooter: document.getElementById("navigationFooter"),
   userInfoModal: document.getElementById("userInfoModal"),
   loadingOverlay: document.getElementById("loadingOverlay"),
-
   loadingOverlaySubmit: document.getElementById("loadingOverlaySubmit"),
-
   startSurveyBtn: document.getElementById("startSurveyBtn"),
   backBtn: document.getElementById("backBtn"),
   continueBtn: document.getElementById("continueBtn"),
@@ -773,6 +771,7 @@ function init() {
 
 // Event listeners
 function attachEventListeners() {
+  elements.userInfoModal.addEventListener('click', closeUserInfoModal)
   elements.startSurveyBtn.addEventListener("click", openUserInfoModal);
   elements.userInfoForm.addEventListener("submit", handleUserInfoSubmit);
   elements.backBtn.addEventListener("click", goToPreviousStep);

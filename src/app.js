@@ -6,12 +6,13 @@ const surveyData = {
       question: "1. Há quanto tempo trabalha na Masterboi?",
       type: "radio",
       options: [
-        "Menos de 1 ano",
+        "Menos de 45 dias",
+        "45 dias a 1 ano",
         "1 a 5 anos",
-        "6 a 10 anos",
-        "11 a 15 anos",
-        "16 a 20 anos",
-        "21 anos e acima",
+        "5 a 10 anos",
+        "10 a 15 anos",
+        "15 a 20 anos",
+        "20 anos ou mais",
       ],
     },
     {
